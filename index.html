@@ -3,139 +3,285 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio | Clayton</title>
-    <meta name="description" content="Clayton - Forex trader, web developer, and media creator. Minimal dark portfolio with professional projects and contact." />
+    <title>Clayton | Product-Focused Web Developer</title>
+    <meta
+      name="description"
+      content="Clayton builds elegant, high-performance websites and web apps with clear UX, strong branding, and measurable business impact."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
   </head>
   <body>
-    <main class="page">
-      <header class="topbar">
-        <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="logo" href="#home">Clayton</a>
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          aria-label="Toggle navigation"
+          aria-controls="nav"
+          aria-expanded="false"
+        >
+          <span class="menu-icon" aria-hidden="true">&#9776;</span>
+          <span class="menu-label">Menu</span>
+        </button>
         <nav class="nav" id="nav">
           <a href="#home">Home</a>
           <a href="#about">About</a>
+          <a href="#services">Services</a>
           <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <a class="nav-cta" href="#contact">Let's Talk</a>
         </nav>
-      </header>
+      </div>
+    </header>
 
-      <div class="page-dots" id="pageDots" aria-label="Section navigation"></div>
-
-      <section class="section hero-section" id="home">
-        <div class="hero-content">
-          <p class="overline">👋 Hi there</p>
-          <h1>I'm Clayton</h1>
-          <p class="subtitle">Software engineer building modern, animated full-screen experiences with strong UX and high impact.</p>
-          <div class="hero-buttons">
-            <a class="cta" href="#about">About</a>
-            <a class="cta cta--secondary" href="#projects">See Projects</a>
+    <main class="page">
+      <section class="section hero reveal" id="home">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow">Available for new projects</p>
+            <h1>Elegant product experiences built for clarity, trust, and conversion.</h1>
+            <p class="lead">
+              I am Clayton, a full-stack developer and UX specialist creating refined websites and web apps that
+              are fast, accessible, and easy to use.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#contact">Start a project</a>
+              <a class="btn btn-ghost" href="#projects">View work</a>
+            </div>
+            <div class="meta-row">
+              <div class="meta-card">
+                <span class="meta-value">3+</span>
+                <span class="meta-label">Years shipping web products</span>
+              </div>
+              <div class="meta-card">
+                <span class="meta-value">40+</span>
+                <span class="meta-label">Pages and flows delivered</span>
+              </div>
+              <div class="meta-card">
+                <span class="meta-value">24-48h</span>
+                <span class="meta-label">Response time</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card">
+            <p class="badge">Crafted for founders and growing teams</p>
+            <h2>What you get</h2>
+            <ul class="checklist">
+              <li>Premium UI with a consistent design system</li>
+              <li>Performance-first builds and SEO-ready structure</li>
+              <li>Clear messaging, calls to action, and analytics setup</li>
+            </ul>
+            <div class="hero-note">
+              <span class="hero-note-title">Next step</span>
+              <p>Share your goals and timeline. I will reply with a short plan and estimate.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section about-section" id="about">
-        <div class="about-wrapper">
-          <h2>About</h2>
-          <p class="about-intro">I build measurable digital products with polished UI and robust features. I specialize in agency-level project delivery spanning web development, UX, and product strategy.</p>
-
-          <div class="about-grid">
-            <article class="card card--about">
-              <h3>Experience</h3>
-              <ul>
-                <li>3+ years full-stack web development (HTML/JS/CSS/React/Node)</li>
-                <li>Articulate business landing pages, marketplaces, and dashboards</li>
-                <li>Deliver responsive UX with performance and accessibility focus</li>
-                <li>Freelance and agency workflow (client briefs, sprint delivery)</li>
-              </ul>
-            </article>
-
-            <article class="card card--about">
-              <h3>Skills</h3>
-              <ul>
-                <li>Web UI/UX, responsive design, animations</li>
-                <li>JavaScript (ES6+), modern frameworks (React / Vue / Svelte)</li>
-                <li>CSS grid/flex, transition/transform/scroll-snap, theming</li>
-                <li>Node.js, API integration, deployment, Git + CI</li>
-              </ul>
-            </article>
+      <section class="section reveal" id="about">
+        <div class="section-head">
+          <div>
+            <h2>About</h2>
+            <p>
+              My work blends strategy, visual design, and engineering to create digital products that feel simple
+              and premium. I also bring 3+ years of forex trading experience focused on disciplined risk
+              management and growing investor capital.
+            </p>
           </div>
-
-          <a class="cta" href="#projects">Browse projects</a>
+          <a class="text-link" href="#contact">Ask about availability</a>
+        </div>
+        <div class="split">
+          <article class="info-card">
+            <h3>Experience</h3>
+            <p>
+              I build web experiences from concept to launch, collaborating with founders, agencies, and
+              fast-moving teams.
+            </p>
+            <ul class="checklist">
+              <li>Product sites, portfolios, SaaS dashboards, and landing pages</li>
+              <li>Responsive layouts, animation, and accessibility best practices</li>
+              <li>Iterative delivery with clear milestones and feedback loops</li>
+              <li>3+ years of forex trading with investor-focused capital growth</li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3>Toolkit</h3>
+            <div class="pill-grid">
+              <span class="pill">HTML/CSS/JavaScript</span>
+              <span class="pill">React + Node</span>
+              <span class="pill">Figma + Design Systems</span>
+              <span class="pill">API Integration</span>
+              <span class="pill">Performance + SEO</span>
+              <span class="pill">Deployment + CI</span>
+              <span class="pill">Forex Trading</span>
+              <span class="pill">Market Analysis</span>
+              <span class="pill">Risk Management</span>
+            </div>
+            <p class="muted">
+              I focus on clear documentation, clean code, and predictable delivery timelines.
+            </p>
+          </article>
         </div>
       </section>
 
-      <section class="section section--project-intro" id="projects">
-        <div>
-          <h2>Projects</h2>
-          <p class="subtitle">Scroll down to move through project showcases one full screen at a time.</p>
-          <p class="subtitle">Each project is a full landscape section with smooth snap transition.</p>
+      <section class="section reveal" id="services">
+        <div class="section-head">
+          <div>
+            <h2>Services</h2>
+            <p>Structured offerings that keep projects fast, focused, and aligned with business outcomes.</p>
+          </div>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Web Design + Build</h3>
+            <p>Elegant marketing sites with structured content and conversion-ready layouts.</p>
+            <ul>
+              <li>Information architecture</li>
+              <li>Custom UI and responsive build</li>
+              <li>Content system and handoff</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <h3>Product UI/UX</h3>
+            <p>Interfaces that feel effortless, with clear flows and thoughtful detail.</p>
+            <ul>
+              <li>Wireframes and prototypes</li>
+              <li>Design systems and components</li>
+              <li>Usability-focused iterations</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <h3>Full-Stack Delivery</h3>
+            <p>Secure, scalable web apps with integrated APIs and automation.</p>
+            <ul>
+              <li>Front-end and back-end setup</li>
+              <li>Authentication and data models</li>
+              <li>Deployment and monitoring</li>
+            </ul>
+          </article>
         </div>
       </section>
 
-      <section class="section project-section" id="project-verdant">
-        <div class="project-card project-card--verdant">
-          <h2>Verdant Web Solutions</h2>
-          <p class="project-tag">Business Landing Page • Branding • Agency UX</p>
-
-          <h3>1. Branding & Visual Identity</h3>
-          <ul>
-            <li>Logo: Verdant Web Solutions 🌿 (minimalist text + leaf icon)</li>
-            <li>Palette: #1B4D3E, #A8D5BA, #F5F5F5, #E1E1E1</li>
-            <li>Font: Poppins / Montserrat / Lato style sans-serif</li>
-            <li>Tone: professional, approachable, confident</li>
-          </ul>
-
-          <h3>2. Page Flow</h3>
-          <ul>
-            <li>Hero + CTA buttons (“Get a Quote”, “View Services”)</li>
-            <li>About agency + mission snippet</li>
-            <li>Services cards (Web Dev, UI/UX, SEO, Mobile Apps)</li>
-            <li>Portfolio preview, testimonials, CTA banner, contact form</li>
-          </ul>
-
-          <h3>3. Enhancements</h3>
-          <ul>
-            <li>Smooth anchor scrolling + scroll-snap sections</li>
-            <li>Hover transitions, responsive grid, form validation</li>
-            <li>Soft fade-in on section intersect</li>
-          </ul>
-
-          <a class="project-link" href="#contact">Contact for a proposal</a>
+      <section class="section reveal" id="projects">
+        <div class="section-head">
+          <div>
+            <h2>Projects</h2>
+          </div>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-head">
+              <h3>Verdant Web Solutions</h3>
+              <div class="tag-row">
+                <span class="tag">Branding</span>
+                <span class="tag">Landing Page</span>
+                <span class="tag">Agency UX</span>
+              </div>
+            </div>
+            <img
+              class="project-image"
+              src="assets/verdant-portfolio.png"
+              alt="Verdant Web Solutions portfolio page screenshot"
+              loading="lazy"
+            />
+            <p>A refined agency site with a calm palette, clear service hierarchy, and polished CTA flow.</p>
+            <ul>
+              <li>Hero, services, testimonials, and contact funnel</li>
+              <li>Animation and scroll-driven storytelling</li>
+              <li>Performance-focused build and responsive design</li>
+            </ul>
+            <a class="text-link" href="#contact">Request a similar build</a>
+          </article>
+          <article class="project-card">
+            <div class="project-head">
+              <h3>Pulse Analytics Platform</h3>
+              <div class="tag-row">
+                <span class="tag">Dashboard</span>
+                <span class="tag">API</span>
+                <span class="tag">Data Viz</span>
+              </div>
+            </div>
+            <p>Analytics experience with clear KPIs, modular widgets, and reliable data flows.</p>
+            <ul>
+              <li>Component library for charts and tables</li>
+              <li>Role-based access and audit logging</li>
+              <li>Fast loading views with caching</li>
+            </ul>
+            <a class="text-link" href="#contact">Discuss platform work</a>
+          </article>
+          <article class="project-card">
+            <div class="project-head">
+              <h3>Northwind Commerce</h3>
+              <div class="tag-row">
+                <span class="tag">Ecommerce</span>
+                <span class="tag">UX</span>
+                <span class="tag">Growth</span>
+              </div>
+            </div>
+            <p>Conversion-focused storefront with a clean catalog and frictionless checkout.</p>
+            <ul>
+              <li>Product discovery, filters, and detail pages</li>
+              <li>Optimized cart and checkout flow</li>
+              <li>Marketing landing pages with SEO structure</li>
+            </ul>
+            <a class="text-link" href="#contact">Plan an ecommerce build</a>
+          </article>
         </div>
       </section>
 
-      <section class="section project-section" id="project-platform">
-        <div class="project-card">
-          <h2>Project B: API Platform & Dashboard</h2>
-          <p class="project-tag">Modern backend + scaled frontend analytics</p>
-          <p>Built a scalable API with automatic testing, zero-downtime deployment, and responsive UI for enterprise insights.</p>
-          <a class="project-link" href="#contact">Learn more</a>
+      <section class="section reveal" id="contact">
+        <div class="section-head">
+          <div>
+            <h2>Contact</h2>
+            <p>Tell me about your project. I will respond with next steps and a clear proposal.</p>
+          </div>
         </div>
-      </section>
-
-      <section class="section contact-section" id="contact">
-        <div class="contact-card-wrapper">
-          <h2>Contact</h2>
-          <p>Ready to discuss your next project? Send a message or reach out directly through one of these channels.</p>
-
-          <div class="contact-grid">
-            <a id="emailLink" class="contact-card" href="mailto:klaymu17@gmail.com">
-              <span class="contact-icon">📧</span>
-              <span class="contact-title">Email</span>
-            </a>
-            <a id="whatsappLink" class="contact-card" href="https://wa.me/254757164258?text=Hello%20Clayton%2C%20I%27m%20interested%20in%20a%20project." target="_blank" rel="noreferrer">
-              <span class="contact-icon">🟢</span>
-              <span class="contact-title">WhatsApp</span>
-            </a>
-            <a id="telegramLink" class="contact-card" href="https://t.me/+254757164258" target="_blank" rel="noreferrer">
-              <span class="contact-icon">✈️</span>
-              <span class="contact-title">Telegram</span>
-            </a>
-            <a id="callLink" class="contact-card" href="tel:+254757164258">
-              <span class="contact-icon">📞</span>
-              <span class="contact-title">Call</span>
-            </a>
+        <div class="contact-wrapper">
+          <div class="contact-panel">
+            <div class="contact-grid">
+              <a id="emailLink" class="contact-card" href="mailto:klaymu17@gmail.com">
+                <span class="contact-title">Email</span>
+                <span class="contact-meta">klaymu17@gmail.com</span>
+              </a>
+              <a
+                id="whatsappLink"
+                class="contact-card"
+                href="https://wa.me/254757164258?text=Hello%20Clayton%2C%20I%27m%20interested%20in%20a%20project."
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <span class="contact-title">WhatsApp</span>
+                <span class="contact-meta">+254 757 164 258</span>
+              </a>
+              <a
+                id="telegramLink"
+                class="contact-card"
+                href="https://t.me/+254757164258"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <span class="contact-title">Telegram</span>
+                <span class="contact-meta">Message me directly</span>
+              </a>
+              <a id="callLink" class="contact-card" href="tel:+254757164258">
+                <span class="contact-title">Call</span>
+                <span class="contact-meta">+254 757 164 258</span>
+              </a>
+            </div>
+            <div id="messagePreview" class="message-preview" hidden>
+              <h3>Message preview</h3>
+              <pre id="messageContent"></pre>
+            </div>
           </div>
 
           <form id="contactForm" class="simple-form" novalidate>
@@ -144,21 +290,17 @@
             <label for="email">Email</label>
             <input id="email" name="email" type="email" required placeholder="you@example.com" />
             <label for="message">Message</label>
-            <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
-            <button class="cta" type="submit">Send Message</button>
-            <p id="formFeedback" class="form-feedback"></p>
+            <textarea id="message" name="message" required placeholder="Tell me about your goals and timeline..."></textarea>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <p id="formFeedback" class="form-feedback" role="status"></p>
           </form>
-
-          <div id="messagePreview" class="message-preview" style="display:none;">
-            <h3>Pre-filled message</h3>
-            <pre id="messageContent"></pre>
-          </div>
         </div>
       </section>
-
-      <footer class="footer">
-        <p>© <span id="year"></span> Clayton | Professional portfolio and services. All rights reserved.</p>
-      </footer>
     </main>
+
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Clayton. Designed and built for clarity and impact.</p>
+    </footer>
   </body>
 </html>
+

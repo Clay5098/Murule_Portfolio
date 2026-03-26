@@ -13,93 +13,146 @@
       <header class="topbar">
         <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
         <nav class="nav" id="nav">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="projects.html">Projects</a>
-          <a href="contact.html">Contact</a>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </nav>
       </header>
 
-      <section class="hero" id="home">
+      <div class="page-dots" id="pageDots" aria-label="Section navigation"></div>
+
+      <section class="section hero-section" id="home">
         <div class="hero-content">
           <p class="overline">👋 Hi there</p>
           <h1>I'm Clayton</h1>
-          <p class="subtitle">Software engineer building minimal, strong UX experiences with modern web standards.</p>
+          <p class="subtitle">Software engineer building modern, animated full-screen experiences with strong UX and high impact.</p>
           <div class="hero-buttons">
-            <a class="cta" href="#projects">See my work</a>
-            <a class="cta cta--secondary" href="#contact">Download resume</a>
+            <a class="cta" href="#about">About</a>
+            <a class="cta cta--secondary" href="#projects">See Projects</a>
           </div>
         </div>
       </section>
 
-      <section class="card-grid" id="about">
-        <article class="card">
+      <section class="section about-section" id="about">
+        <div class="about-wrapper">
           <h2>About</h2>
-          <p>Clayton is a growth-oriented professional blending 3+ years of active trading performance with practical web development and digital media expertise.
-          A top goal: create measurable business outcomes for clients through market strategy, UI excellence, and high-converting video content.</p>
+          <p class="about-intro">I build measurable digital products with polished UI and robust features. I specialize in agency-level project delivery spanning web development, UX, and product strategy.</p>
 
-          <h3>Core capabilities</h3>
-          <ul>
-            <li>Forex & commodity trading (GOLD, GBP/USD, EUR/USD) - disciplined, risk-managed, data-backed.</li>
-            <li>Full-stack modern web applications - responsive, sustainable, and performance-first.</li>
-            <li>Video production for social and campaigns - CapCut, DaVinci Resolve, brand storytelling.</li>
-            <li>Engineering productivity - Git workflows, CI/CD, quality automation and iteration.</li>
-          </ul>
+          <div class="about-grid">
+            <article class="card card--about">
+              <h3>Experience</h3>
+              <ul>
+                <li>3+ years full-stack web development (HTML/JS/CSS/React/Node)</li>
+                <li>Articulate business landing pages, marketplaces, and dashboards</li>
+                <li>Deliver responsive UX with performance and accessibility focus</li>
+                <li>Freelance and agency workflow (client briefs, sprint delivery)</li>
+              </ul>
+            </article>
 
-          <h3>Professional impact</h3>
-          <ul>
-            <li>Reduced load time by 45% in responsive web builds</li>
-            <li>Delivered in high velocity with repeated client retention</li>
-            <li>Scaled marketing content across mobile-first platforms</li>
-          </ul>
-        </article>
-      </section>
+            <article class="card card--about">
+              <h3>Skills</h3>
+              <ul>
+                <li>Web UI/UX, responsive design, animations</li>
+                <li>JavaScript (ES6+), modern frameworks (React / Vue / Svelte)</li>
+                <li>CSS grid/flex, transition/transform/scroll-snap, theming</li>
+                <li>Node.js, API integration, deployment, Git + CI</li>
+              </ul>
+            </article>
+          </div>
 
-      <section class="projects-section" id="projects">
-        <h2>Featured Projects</h2>
-        <div class="projects-grid">
-          <article class="project">
-            <img class="project-img" src="https://images.unsplash.com/photo-1557804506-669a67965ba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTg5MDJ8MHwxfHNlYXJjaHwyfHx0ZWNofGVufDB8fHx8MTY5MDc1MjMwMw&ixlib=rb-1.2.1&q=80&w=400" alt="Professional dashboard interface" />
-            <h3>Project A</h3>
-            <p>Modern single-page dashboard with real-time sync and dark UI.</p>
-            <a class="project-link" href="#" rel="noopener">Live demo</a>
-          </article>
-          <article class="project">
-            <img class="project-img" src="https://images.unsplash.com/photo-1508780709619-79562169bc64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTg5MDJ8MHwxfHNlYXJjaHwzfHx3ZWJkZXNpZ258ZW58MHx8fHwxNjkwNzUyMzIz&ixlib=rb-1.2.1&q=80&w=400" alt="Code editor and workspace" />
-            <h3>Project B</h3>
-            <p>API platform with automated tests and zero-downtime deployment.</p>
-            <a class="project-link" href="#" rel="noopener">Source</a>
-          </article>
-          <article class="project">
-            <img class="project-img" src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTg5MDJ8MHwxfHNlYXJjaHwxfHx2aWRlb3xlbnwwfHx8fDE2OTA3NTIzMjM&ixlib=rb-1.2.1&q=80&w=400" alt="Video editing workflow" />
-            <h3>Project C</h3>
-            <p>Video content pipeline for dynamic brand storytelling and social media ads.</p>
-            <a class="project-link" href="#" rel="noopener">Case study</a>
-          </article>
+          <a class="cta" href="#projects">Browse projects</a>
         </div>
       </section>
 
-      <section class="contact" id="contact">
-        <h2>Contact</h2>
-        <p>Reach out to discuss collaborations, consulting, or your next product idea.</p>
-        <div class="contact-grid">
-          <a class="contact-card" href="mailto:klaymu17@gmail.com">
-            <span class="contact-icon">📧</span>
-            <span class="contact-title">Email</span>
-          </a>
-          <a class="contact-card" href="https://wa.me/254757164258?text=Hello%20Clayton%2C%20I%27m%20interested%20in%20discussing%20a%20professional%20partnership%20or%20service%20engagement.%20Please%20let%20me%20know%20your%20availability." target="_blank" rel="noreferrer">
-            <span class="contact-icon">🟢</span>
-            <span class="contact-title">WhatsApp</span>
-          </a>
-          <a class="contact-card" href="https://t.me/+254757164258" target="_blank" rel="noreferrer">
-            <span class="contact-icon">✈️</span>
-            <span class="contact-title">Telegram</span>
-          </a>
-          <a class="contact-card contact-card--call" href="tel:+254757164258">
-            <span class="contact-icon">📞</span>
-            <span class="contact-title">Call</span>
-            <span class="contact-number">+254757164258</span>
-          </a>
+      <section class="section section--project-intro" id="projects">
+        <div>
+          <h2>Projects</h2>
+          <p class="subtitle">Scroll down to move through project showcases one full screen at a time.</p>
+          <p class="subtitle">Each project is a full landscape section with smooth snap transition.</p>
+        </div>
+      </section>
+
+      <section class="section project-section" id="project-verdant">
+        <div class="project-card project-card--verdant">
+          <h2>Verdant Web Solutions</h2>
+          <p class="project-tag">Business Landing Page • Branding • Agency UX</p>
+
+          <h3>1. Branding & Visual Identity</h3>
+          <ul>
+            <li>Logo: Verdant Web Solutions 🌿 (minimalist text + leaf icon)</li>
+            <li>Palette: #1B4D3E, #A8D5BA, #F5F5F5, #E1E1E1</li>
+            <li>Font: Poppins / Montserrat / Lato style sans-serif</li>
+            <li>Tone: professional, approachable, confident</li>
+          </ul>
+
+          <h3>2. Page Flow</h3>
+          <ul>
+            <li>Hero + CTA buttons (“Get a Quote”, “View Services”)</li>
+            <li>About agency + mission snippet</li>
+            <li>Services cards (Web Dev, UI/UX, SEO, Mobile Apps)</li>
+            <li>Portfolio preview, testimonials, CTA banner, contact form</li>
+          </ul>
+
+          <h3>3. Enhancements</h3>
+          <ul>
+            <li>Smooth anchor scrolling + scroll-snap sections</li>
+            <li>Hover transitions, responsive grid, form validation</li>
+            <li>Soft fade-in on section intersect</li>
+          </ul>
+
+          <a class="project-link" href="#contact">Contact for a proposal</a>
+        </div>
+      </section>
+
+      <section class="section project-section" id="project-platform">
+        <div class="project-card">
+          <h2>Project B: API Platform & Dashboard</h2>
+          <p class="project-tag">Modern backend + scaled frontend analytics</p>
+          <p>Built a scalable API with automatic testing, zero-downtime deployment, and responsive UI for enterprise insights.</p>
+          <a class="project-link" href="#contact">Learn more</a>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="contact-card-wrapper">
+          <h2>Contact</h2>
+          <p>Ready to discuss your next project? Send a message or reach out directly through one of these channels.</p>
+
+          <div class="contact-grid">
+            <a id="emailLink" class="contact-card" href="mailto:klaymu17@gmail.com">
+              <span class="contact-icon">📧</span>
+              <span class="contact-title">Email</span>
+            </a>
+            <a id="whatsappLink" class="contact-card" href="https://wa.me/254757164258?text=Hello%20Clayton%2C%20I%27m%20interested%20in%20a%20project." target="_blank" rel="noreferrer">
+              <span class="contact-icon">🟢</span>
+              <span class="contact-title">WhatsApp</span>
+            </a>
+            <a id="telegramLink" class="contact-card" href="https://t.me/+254757164258" target="_blank" rel="noreferrer">
+              <span class="contact-icon">✈️</span>
+              <span class="contact-title">Telegram</span>
+            </a>
+            <a id="callLink" class="contact-card" href="tel:+254757164258">
+              <span class="contact-icon">📞</span>
+              <span class="contact-title">Call</span>
+            </a>
+          </div>
+
+          <form id="contactForm" class="simple-form" novalidate>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required placeholder="Your name" />
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com" />
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
+            <button class="cta" type="submit">Send Message</button>
+            <p id="formFeedback" class="form-feedback"></p>
+          </form>
+
+          <div id="messagePreview" class="message-preview" style="display:none;">
+            <h3>Pre-filled message</h3>
+            <pre id="messageContent"></pre>
+          </div>
         </div>
       </section>
 
